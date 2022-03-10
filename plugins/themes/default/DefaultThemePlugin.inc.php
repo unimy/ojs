@@ -91,17 +91,20 @@ class DefaultThemePlugin extends \PKP\plugins\ThemePlugin
             ],
             'default' => false,
         ]);
+        /*
         $this->addOption('useHomepageImageAsHeader', 'FieldOptions', [
             'label' => __('plugins.themes.default.option.useHomepageImageAsHeader.label'),
             'description' => __('plugins.themes.default.option.useHomepageImageAsHeader.description'),
             'options' => [
                 [
                     'value' => true,
-                    'label' => __('plugins.themes.default.option.useHomepageImageAsHeader.option')
+                    'label' => __('plugins.themes.default.option.useHomepageImageAsHeader.option'),
+                    'disabled' => 'disabled'
                 ],
             ],
             'default' => false,
         ]);
+        */
 
         // Load primary stylesheet
         $this->addStyle('stylesheet', 'styles/index.less');
